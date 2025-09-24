@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- NAVIGATION MENU -->
+<header class="menu">
+  <div class="logo-text">Sarah</div>
+
+    <!-- Sidebar toggle -->
+  <div class="sidebar-toggle" id="sidebarToggle">
+    <i class="fas fa-address-card"></i>
+  </div>
+
+  <!-- Hamburger menu for nav links -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home" class="active">HOME</a></li>
+    <li><a href="#about">ABOUT ME</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#contact">CONTACT ME</a></li>
+  </ul>
+</header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <img src="./sa.jpg" alt="Avatar" class="avatar">
+    <div class="hero-text">
+      <h1>Hello, Welcome to my portifolio</h1>
+      <p>My name is <strong>Niwahereza Sarafina</strong> Computer Science Student & Aspiring Software Developer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="info-list">
+      <ul>
+        <li><span class="label"><i class="fas fa-user"></i> Name:</span>Niwahereza Sarafina</li>
+        <li><span class="label"><i class="fas fa-envelope"></i> Email:</span>snuwahereza0@gmail.com</li>
+        <li><span class="label"><i class="fas fa-phone"></i> Tell:</span> +256-787-102-857</li>
+        <li><span class="label"><i class="fas fa-map-marker-alt"></i> Address:</span> Kamokya-Kampala-Uganda</li>
+        <li><span class="label"><i class="fas fa-briefcase"></i> Profession:</span> Student</li>
+      </ul>
+    </div>
+  </section>
+
+<!-- <div class="skill-box skill-container"> -->
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill-box">
+      <p>HTML / CSS / JS</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="90%">90%</div>
+      </div>
+    </div>
+
+        <div class="skill-box">
+      <p>React / Frontend</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="80%">80%</div>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <p>Python</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="75%">75%</div>
+      </div>
+    </div>
+
+    <div class="skill-box">
+      <p>Flask / Backend</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="80%">80%</div>
+      </div>
+    </div>
+    
+    <div class="skill-box">
+      <p>Git / GitHub</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="85%">85%</div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <p>Problem Solving</p>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="95%">95%</div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+    <section class="timeline-section">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Diploma in Computer Science</h3>
+        <p>Women's Institute Of Technology And Innovation (WITU) (2023 - Present)</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>UACE</h3>
+        <p>Bonicocilii Girls Voc ss</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>UCE</h3>
+        <p>Trevoc campus hills</p>
+    </div>
+  </section>
+
+</section>
+
+
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="container projects-container">
+      <div class="project-card">
+        <img src="./images/Screenshot_20250909-132229~2 (2).jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Nyumbani construction works.</p>
+          </div>
+
+      <!-- Project Modal -->
+<div id="projectModal" class="project-modal">
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+    <img src="Project Image" alt="Project Image" id="modalImg">
+    <h3 id="modalTitle">Project Title</h3>
+    <p id="modalDesc">Project Description</p>
+  </div>
+</div>
+
+
+      <div class="project-card">
+        <img src="./images/1.png" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Made a business card for a client.</p>
+              </div>
+
+            <div class="project-card">
+        <img src="./images/2.png" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>Back view of a business card for a client.</p>
+              </div>
+
+      <div class="project-card">
+        <img src="./images/Black And White Modern Typographic Simple Virus Apparel Logo (3) (2).png" alt="Project 4">
+        <h3>Project Four</h3>
+        <p>Created my business logo</p>
+              </div>
+
+            <div class="project-card">
+        <img src="./images/my portifolio.JPG" alt="Project 4">
+        <h3>Project Four</h3>
+        <p>Created my personal portfolio</p>
+              </div>
+
+    </div>
+  </section>
+  <!-- <a href="./pages/project.html" class="btn">View All Projects</a> -->
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form-container">
+      <h2>Send Me a Message</h2>
+      <form action="https://formspree.io/f/xnngajda" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+
+      <script>
+      const form = document.getElementById('contactForm');
+const confirmation = document.getElementById('confirmation');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // prevent default form submission
+    
+    // Collect form data
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+        // send to backend endpoint
+        const response = await fetch('/send-message', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if(response.ok){
+            confirmation.style.display = 'block';
+            form.reset(); // clear form
+        } else {
+            alert('Failed to send message. Please try again.');
+        }
+    } catch (err) {
+        alert('Error sending message.');
+    }
+});
+</script>
+
+    </div><br>
+<div class="info-box contact-info">
+    <div class="info-box follow-box">
+  <h2>Follow Me</h2>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/nakatudde-harriet-2953a230a/" target="_blank">
+      <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+    </a>
+    <a href="https://x.com/smartco34372881?s=09" target="_blank">
+      <ion-icon name="logo-twitter"></ion-icon> Twitter
+    </a>
+    <a href="https://github.com/NakatuddeHarrietBrenda" target="_blank">
+      <ion-icon name="logo-github"></ion-icon> GitHub
+    </a>
+    <a href="#" target="_blank">
+      <ion-icon name="logo-google"></ion-icon> Google
+    </a>
+  </div>
+</div>
+
+<!-- Include Ionicons CDN -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- RESUME -->
+  <div class="button">
+    <h2>Download My Resume</h2><br>
+    <a href="./images/NAKATUDDE HARRIET CURRICULUM VITAE_112749 (1).docx" class="btn"> Resume PDF</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Me</h3>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:snuwahereza0@gmail.com">snuwahereza0@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Kamokya, Uganda</p>
+        <p><i class="fas fa-phone"></i> Tel: <a href="tel:+256790439395">0787102857</a></p>
+      </div>
+    </div>
+      <!-- SIDEBAR -->
+<aside class="sidebar whatsapp">
+  <h3>
+    <a href="https://wa.me/256790439395" target="_blank">
+      <i class="fas fa-phone"></i> Whatsapp me
+    </a>
+  </h3>
+  <p>
+    <a href="https://wa.me/256790439395" target="_blank">+256-790-439-395</a>
+  </p>
+</aside>
+    <p class="copyright">&copy; 2024 Nakatudde Harriet</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Custom JS -->
+  <script >
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  const sidebarToggleBtn = document.getElementById('sidebarToggle');
+  const sidebar = document.querySelector('.sidebar');
+
+  // Hamburger toggle
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle('show');
+  });
+
+  // Sidebar toggle
+  sidebarToggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sidebar.classList.toggle('show');
+  });
+
+  // Close when clicking outside (only for mobile)
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      if (!sidebar.contains(e.target) && !sidebarToggleBtn.contains(e.target)) {
+        sidebar.classList.remove('show');
+      }
+      if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+        navLinks.classList.remove('show');
+      }
+    }
+  });
+
+  // Prevent clicks inside sidebar from closing it
+  sidebar.addEventListener('click', (e) => e.stopPropagation());
+});
+document.addEventListener('DOMContentLoaded', () => {
+
+  // 4️⃣ Scroll-triggered fade-in sections
+  const fadeSections = document.querySelectorAll("section, .project-card");
+  const fadeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("fade-in");
+    });
+  }, { threshold: 0.2 });
+  fadeSections.forEach(sec => fadeObserver.observe(sec));
+
+  // 5️⃣ Typing animation for hero text
+  const heroHeading = document.querySelector(".hero-text h1");
+  const fullText = heroHeading.innerText;
+  heroHeading.innerText = "";
+  let i = 0;
+  const typingSpeed = 100;
+  function typeWriter() {
+    if (i < fullText.length) {
+      heroHeading.innerHTML += fullText.charAt(i);
+      i++;
+      setTimeout(typeWriter, typingSpeed);
+    }
+  }
+  typeWriter();
+
+  // 6️⃣ Animate skill boxes (random bar)
+  const skillBoxes = document.querySelectorAll(".skill-box");
+  skillBoxes.forEach((box, index) => {
+    const bar = document.createElement("div");
+    bar.style.cssText = "height:6px;width:0;background:#0b6b3b;border-radius:4px;margin-top:8px;transition:width 2s ease;";
+    box.appendChild(bar);
+    const skillPercent = Math.floor(Math.random() * 40) + 60;
+    setTimeout(() => bar.style.width = skillPercent + "%", 500 + index * 200);
+  });
+
+  // 7️⃣ Animate skill-fill bars
+  document.querySelectorAll('.skill-fill').forEach((bar, index) => {
+    const percent = bar.getAttribute('data-percent');
+    let width = 0;
+    const interval = setInterval(() => {
+      if(width >= parseInt(percent)) {
+        clearInterval(interval);
+      } else {
+        width++;
+        bar.style.width = width + '%';
+        bar.textContent = width + '%';
+      }
+    }, 15 + index * 10);
+  });
+
+  // 8️⃣ Project card modal preview
+  const projectCards = document.querySelectorAll(".project-card");
+  projectCards.forEach(card => {
+    card.addEventListener("click", () => {
+      const imgSrc = card.querySelector("img").src;
+      const modal = document.createElement("div");
+      modal.style.cssText = `
+        position:fixed;top:0;left:0;width:100%;height:100%;
+        background:rgba(0,0,0,0.8);display:flex;justify-content:center;align-items:center;z-index:999;
+      `;
+      const modalImg = document.createElement("img");
+      modalImg.src = imgSrc;
+      modalImg.style.cssText = "max-width:80%;max-height:80%;border-radius:15px;box-shadow:0 0 20px #fff;";
+      modal.appendChild(modalImg);
+      document.body.appendChild(modal);
+      modal.addEventListener("click", () => modal.remove());
+    });
+  });
+
+  // 9️⃣ Back-to-top button
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+  backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+ 
+});
+
+
+
+  </script>
+</body>
+</html>
