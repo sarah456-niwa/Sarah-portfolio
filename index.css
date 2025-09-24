@@ -106,14 +106,14 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  background: linear-gradient(135deg, #0b6b3b, #0a5a32);
+  background: linear-gradient(135deg,#4c3ec4, #4c3ec4);
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   text-align: center;
   transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 .projects + .btn:hover {
-  background: linear-gradient(135deg, #0a5a32, #094a28);
+  background: linear-gradient(135deg,#4c3ec4, #4c3ec4);
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
@@ -197,7 +197,7 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
 }
 
 /* FOOTER */
-.footer{background:#0b6b3b;color:#fff;padding:30px 20px;margin-top:40px; border-top: 4px solid #034422;}
+.footer{background:#4c3ec4;color:#fff;padding:30px 20px;margin-top:40px; border-top: 4px solid #034422;}
 .footer-container{display:flex;flex-wrap:wrap;justify-content:space-around;gap:20px;text-align:left;}
 .footer-section h3{color:#d9f3e7;margin-bottom:10px;}
 .footer-section ul{list-style:none;}
