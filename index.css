@@ -749,11 +749,23 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
     margin-left: 0; /* no sidebar space */
   }
 }
+@media (max-width: 768px) {
+  .menu {
+    background: linear-gradient(90deg, #4c3ec4, #4c3ec4); /* Keep your purple tone */
+  }
+  .menu ul {
+    background: #4c3ec4; /* Match header background */
+  }
+  .hamburger, .sidebar-toggle {
+    color: #fff; /* Ensure icons remain visible */
+  }
+}
+
 
 @keyframes float {
-  0% { transform: translateY(3px); }
+  0% { transform: translateY(0px); }
   50% { transform: translateY(-50px); }
-  100% { transform: translateY(10px); }
+  100% { transform: translateY(0px); }
 }
 
 .animated-photo {
