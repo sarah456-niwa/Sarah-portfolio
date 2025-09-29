@@ -1,10 +1,10 @@
-/* *{margin:0;padding:0;box-sizing:border-box;}
+*{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
   font-family:"Segoe UI",Arial,sans-serif;
   background:#fdfdfd;
   color:#333;
-} */
+}
 
 /* HEADER */
 .menu{
@@ -749,4 +749,15 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
     margin-left: 0; /* no sidebar space */
   }
 }
+
+@keyframes float {
+  0% { transform: translateY(3px); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(10px); }
+}
+
+.animated-photo {
+  animation: float 2s ease-in-out infinite;
+}
+
 
