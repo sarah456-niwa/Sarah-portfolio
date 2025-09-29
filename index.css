@@ -370,8 +370,7 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
 
 /* timeline items */
 .timeline-item {
-  background: #e1f3e6;                   /* soft green overlay like info-box bg */
-            /* darker green border */
+  background: #e1f3e6;               
   border-radius: 15px;
   padding: 20px 25px;
   transition: all 0.3s ease-in-out;
@@ -382,13 +381,13 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
 }
 
 .timeline-item h3 {
-  color: #4c3ec4;                        /* heading dark green */
+  color: #4c3ec4;                        /* heading purple */
   margin-bottom: 8px;
   font-size: 1.4rem;
 }
 
 .timeline-item p {
-  color: #000804;                        /* text slightly darker green */
+  color: #000804;                        /* text slightly darker */
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -568,7 +567,7 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
   .project-card img{height:140px;}
 }
 @media(max-width:768px){
-  .menu ul{display:none;flex-direction:column;background:#0b6b3b;padding:10px;position:absolute;right:20px;top:60px;border-radius:8px;width:200px;}
+  .menu ul{display:none;flex-direction:column;background:#4c3ec4;padding:10px;position:absolute;right:20px;top:60px;border-radius:8px;width:200px;}
   .menu ul.show{display:flex;}
   .hamburger{display:block;}
   .hero{flex-direction:column;}
