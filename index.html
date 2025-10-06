@@ -91,8 +91,8 @@
 /* Image styling remains the same */
 .animated-photo {
   width: 400px;
-  height: 500px;
-  border-radius: 10px;
+  height: 600px;
+  border-radius: 2px;
   object-fit: cover;
   border: 4px solid #4c3ec4;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -108,39 +108,38 @@
 
 /* Floating Card Styles */
 .floating-card {
-  flex: 2 1 500px;
+  flex: 3 1 600px;
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(76, 62, 196, 0.15);
+  box-shadow: 0 10px 20px rgba(76, 62, 196, 0.15);
   padding: 40px 50px;
   font-size: 1.05em;
   color: #333;
   line-height: 1.8;
-  animation: floatIn 1.3s ease forwards;
+  animation: floatIn 5s ease forwards;
   opacity: 0;
-  transform: translateY(60px);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: translateY(20px);
 }
 
 /* Hover lift effect */
 .floating-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-30px);
   box-shadow: 0 12px 25px rgba(76, 62, 196, 0.25);
 }
 
 /* Animation for smooth entry */
 @keyframes floatIn {
-  0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-10px);
+  10% {
+    opacity: 10;
+    transform: translateY(90%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10);
   }
 }
 

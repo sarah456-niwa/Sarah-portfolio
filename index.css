@@ -187,12 +187,12 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
 }
 .projects + .btn{
   display:block;margin:20px auto;padding:14px 28px;font-size:1rem;font-weight:bold;
-  text-decoration:none;color:#fff;background:linear-gradient(135deg, #0b6b3b, #0a5a32);
+  text-decoration:none;color:#fff;background:linear-gradient(135deg, #4c3ec4, #4c3ec4);
   border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.2);
   transition:transform .3s ease, background .3s ease, box-shadow .3s ease;
 }
 .projects + .btn:hover{
-  background:linear-gradient(135deg, #0a5a32, #094a28);transform:translateY(-3px);
+  background:linear-gradient(135deg, #4c3ec4, #4c3ec4);transform:translateY(-3px);
   box-shadow:0 6px 18px rgba(0,0,0,0.3);
 }
 
@@ -411,7 +411,7 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
 }
 
 
-/* CONTACT FORM - GREEN & WHITE THEME */
+/* CONTACT FORM - blue & WHITE THEME */
 .contact-form-container {
     background: rgba(217, 243, 231, 0.8);  /* soft green overlay */
     border-radius: 20px;
@@ -668,13 +668,13 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
   }
 }
 .sidebar.whatsapp a {
-  color: #5da6ee; /* WhatsApp green */
+  color: #5da6ee; /* WhatsApp blue */
   text-decoration: none; /* remove underline */
   font-weight: bold;
 }
 
 .sidebar.whatsapp a:hover {
-  color: #4c3ec4; /* darker green on hover */
+  color: #4c3ec4; /* blue on hover */
 }
 
 .sidebar.whatsapp i {
@@ -763,12 +763,12 @@ h2{color:#4c3ec4;margin-bottom:20px;font-size:2rem;text-align:center;}
 
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-50px); }
+  50% { transform: translateY(-90px); }
   100% { transform: translateY(0px); }
 }
 
 .animated-photo {
-  animation: float 2s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
 
