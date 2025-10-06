@@ -43,43 +43,21 @@
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
-
-  <!-- ABOUT ME -->
-
-<section id="about" style="padding: 60px 20px; background-color: #fff; color: #222; font-family: 'Segoe UI', Arial, sans-serif;">
-  <h2 style="font-size: 2.2em; text-align: center; color:  #4c3ec4; margin-bottom: 40px; letter-spacing: 1px;">About Me</h2>
+<!-- ABOUT ME -->
+<section id="about" style="padding: 60px 20px; background-color: #fff; color: #222; font-family: 'Segoe UI', Arial, sans-serif;">  <h2 style="font-size: 2.2em; text-align: center; color: #4c3ec4; margin-bottom: 40px; letter-spacing: 1px;">About Me</h2>
 
   <!-- Container -->
   <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; max-width: 1100px; margin: 0 auto; gap: 40px;">
 
-<!-- Picture Placeholder -->
-<div style="flex: 1 1 250px; text-align: center;">
-  <img src="./ssss.jpg" alt="Profile Picture" class="animated-photo">
-</div>
+    <!-- Picture -->
+    <div style="flex: 1 1 250px; text-align: center;">
+      <img src="./ssss.jpg" alt="Profile Picture" class="animated-photo">
+    </div>
 
-<style>
-.animated-photo {
-  width: 400px;
-  height: 500px;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 4px solid #4c3ec4;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: all 0.6s ease;
-}
-
-/* Hover animation */
-.animated-photo:hover {
-  transform: scale(1.08) rotate(-2deg);
-  box-shadow: 0 12px 25px rgba(76, 62, 196, 0.5);
-  border-color: #ff7f50;
-}
-</style>
-
-    <!-- Text Content -->
-    <div style="flex: 2 1 500px; text-align: left; line-height: 1.8; font-size: 1.1em;">
+    <!-- Floating Card -->
+    <div class="floating-card">
       <p>
-        Hello! I’m <strong style="color: #4c3ec4;">Niwahereza Sarafina</strong>, a passionate 
+        Hello! I’m <strong class="highlight">Niwahereza Sarafina</strong>, a passionate 
         <strong>Software Developer</strong> based in <strong>Kampala, Uganda</strong>. I specialize in building 
         intuitive, high-performance, and user-friendly digital solutions that solve real-world problems.
       </p>
@@ -94,18 +72,101 @@
         My mission is to merge creativity with technology to build impactful systems that empower individuals and businesses to reach their full potential in the digital world.
       </p>
 
-      <!-- Info List -->
-      <ul style="list-style: none; padding: 0; margin-top: 20px; font-size: 1.05em;">
-        <li style="margin: 10px 0;"><span style="font-weight: bold; color:  #4c3ec4;"><i class="fas fa-user"></i> Name:</span> Niwahereza Sarafina</li>
-        <li style="margin: 10px 0;"><span style="font-weight: bold; color:  #4c3ec4;"><i class="fas fa-briefcase"></i> Profession:</span> Software Developer</li>
-        <li style="margin: 10px 0;"><span style="font-weight: bold; color:  #4c3ec4;"><i class="fas fa-envelope"></i> Email:</span> snuwahereza0@gmail.com</li>
-        <li style="margin: 10px 0;"><span style="font-weight: bold; color:  #4c3ec4;"><i class="fas fa-phone"></i> Phone:</span> +256-787-102-857</li>
-        <li style="margin: 10px 0;"><span style="font-weight: bold; color:  #4c3ec4;"><i class="fas fa-map-marker-alt"></i> Location:</span> Kamokya, Kampala, Uganda</li>
-        <li style="margin: 10px 0;"><span style="font-weight: bold; color:  #4c3ec4;"><i class="fas fa-laptop-code"></i> Skills:</span> Flutter, React, Flask, HTML, CSS, JavaScript, Python</li>
+      <ul class="info-list">
+        <li><span><i class="fas fa-user"></i> Name:</span> Niwahereza Sarafina</li>
+        <li><span><i class="fas fa-briefcase"></i> Profession:</span> Software Developer</li>
+        <li><span><i class="fas fa-envelope"></i> Email:</span> snuwahereza0@gmail.com</li>
+        <li><span><i class="fas fa-phone"></i> Phone:</span> +256-787-102-857</li>
+        <li><span><i class="fas fa-map-marker-alt"></i> Location:</span> Kamokya, Kampala, Uganda</li>
+        <li><span><i class="fas fa-laptop-code"></i> Skills:</span> Flutter, React, Flask, HTML, CSS, JavaScript, Python</li>
       </ul>
     </div>
   </div>
 </section>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* Image styling remains the same */
+.animated-photo {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 4px solid #4c3ec4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.6s ease;
+}
+
+/* Hover animation */
+.animated-photo:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 12px 25px rgba(76, 62, 196, 0.5);
+  border-color:#0c0c0c;
+}
+
+/* Floating Card Styles */
+.floating-card {
+  flex: 2 1 500px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(76, 62, 196, 0.15);
+  padding: 40px 50px;
+  font-size: 1.05em;
+  color: #333;
+  line-height: 1.8;
+  animation: floatIn 1.3s ease forwards;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover lift effect */
+.floating-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(76, 62, 196, 0.25);
+}
+
+/* Animation for smooth entry */
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Highlighted text color */
+.highlight {
+  color: #4c3ec4;
+}
+
+/* Info list styling */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.info-list li {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.info-list span {
+  font-weight: bold;
+  color: #4c3ec4;
+  margin-right: 8px;
+}
+</style>
 
 <!-- <div class="skill-box skill-container"> -->
 <section class="skills">
